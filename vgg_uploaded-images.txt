@@ -1,0 +1,133 @@
+Argument 1: uploaded_images/
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Prints 10 filenames from folder pet_images/
+ 1 file:                Dog_01.jpg
+ 2 file:               book_01.jpg
+ 3 file:               frog_01.jpg
+ 4 file:                Dog_02.jpg
+['dog', 'book', 'frog', 'dog']
+
+Empty Dictionary results_dic - n items= 0
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:                    book_01.jpg  label:                       book
+ 3 key:                    frog_01.jpg  label:                       frog
+ 4 key:                     Dog_02.jpg  label:                        dog
+
+Filename= Dog_01.jpg 
+pet_image Label= dog 
+Classifier Label= german shepherd, german shepherd dog, german police dog, alsatian 
+match= 1
+
+Filename= book_01.jpg 
+pet_image Label= book 
+Classifier Label= window shade 
+match= 0
+
+Filename= frog_01.jpg 
+pet_image Label= frog 
+Classifier Label= tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui 
+match= 1
+
+Filename= Dog_02.jpg 
+pet_image Label= dog 
+Classifier Label= brabancon griffon 
+match= 0
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+                   frog_01.jpg: 
+Real:                       frog   Classifier: tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui
+
+ NOT A MATCH:
+
+                   book_01.jpg: 
+Real:                       book   Classifier:                   window shade
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:              brabancon griffon
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+Filename= Dog_01.jpg 
+pet_image Label= dog 
+Classifier Label= german shepherd, german shepherd dog, german police dog, alsatian 
+match= 1 
+Image is dog= 1 
+Classifier is dog= 1
+
+Filename= book_01.jpg 
+pet_image Label= book 
+Classifier Label= window shade 
+match= 0 
+Image is dog= 0 
+Classifier is dog= 0
+
+Filename= frog_01.jpg 
+pet_image Label= frog 
+Classifier Label= tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui 
+match= 1 
+Image is dog= 0 
+Classifier is dog= 0
+
+Filename= Dog_02.jpg 
+pet_image Label= dog 
+Classifier Label= brabancon griffon 
+match= 0 
+Image is dog= 1 
+Classifier is dog= 1
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                   frog_01.jpg: 
+Real:                       frog   Classifier: tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                   book_01.jpg: 
+Real:                       book   Classifier:                   window shade  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:              brabancon griffon  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match           : 50.00
+pct_correct_dogs    : 100.00
+pct_correct_breed   : 50.00
+pct_correct_notdogs : 100.00
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:              brabancon griffon
+
+** Total Elapsed Runtime: 0:59:52
